@@ -23,6 +23,7 @@ body{
 
 #chat-window {
     min-height: 85%;
+    max-height: calc(100vh - 150px);
     min-width:inherit;
     padding: 10px;
     overflow-y: scroll;
@@ -67,7 +68,10 @@ body{
   }
 
 #user-input {
-    margin-top: 10px;
+    position: absolute;
+    z-index: 100;
+    bottom: 40px;
+    width: inherit;
 }
 
 #user-input input {
