@@ -53,7 +53,7 @@ async function handleUserInput(event) {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
-                    'Authorization': 'Bearer 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' // Replace with your actual API key
+                    'Authorization': 'Bearer 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'
                 },
                 body: JSON.stringify({
                     "model": "gpt-3.5-turbo",
