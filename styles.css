@@ -7,12 +7,12 @@ body{
     align-items: center;
     justify-content: center;
     overflow-y: clip;
+    margin: 0;
 }
 .info{
     width: 17%;
-    min-height: inherit;
+    min-height: calc(100vh + 30px);
     background-color:#37383b ;
-    margin-top:-45px;
 }
 .container {
     width: 83%;
