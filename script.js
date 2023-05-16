@@ -41,6 +41,7 @@ function appendMessage(message, sender) {
 // Function to handle user input
 async function handleUserInput(event) {
     event.preventDefault();
+    document.getElementById('loader').style.display = 'flex'
     document.getElementsByClassName('container')[0].setAttribute('background-image','none')
     const userMessage = messageInput.value.trim();
     if (userMessage !== '') {
@@ -53,7 +54,7 @@ async function handleUserInput(event) {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
-                    'Authorization': 'Bearer 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'
+                    'Authorization': 'Bearer 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'
                 },
                 body: JSON.stringify({
                     "model": "gpt-3.5-turbo",
@@ -64,7 +65,9 @@ async function handleUserInput(event) {
             const data = await response.json();
             const botMessage = data.choices[0].message.content;
             appendMessage(botMessage, 'Chat_GPT');
+            document.getElementById('loader').style.display = 'none'
         } catch (error) {
+            document.getElementById('loader').style.display = 'none'
             console.error('Error:', error);
         }
     }

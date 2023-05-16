@@ -121,3 +121,13 @@ body{
     background-size: contain;
     background-repeat: no-repeat;
   }
+
+  #loader {
+    flex-direction: row;
+    text-align: center;
+    min-width: 83%;
+    justify-content: center;
+    align-items: flex-start;
+    position: absolute;
+    bottom: 100px;
+}
