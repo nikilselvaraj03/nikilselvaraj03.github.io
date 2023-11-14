@@ -68,7 +68,7 @@ export const NavBar = () => {
     return (
         <nav>
             <div className='navHeader'>
-                <span className='title'><Link to="/"> NIKIL SELVARAJ</Link></span>
+                <span className='title'><Link to="/"> NIKIL NANDHA SELVARAJ</Link></span>
 
                 <ul>
                     <li onClick={()=>scrollto('homeContent')}>About</li>
