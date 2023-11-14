@@ -1,0 +1,19 @@
+.searchInput{
+    border: unset;
+    border-bottom: 1px solid white;
+    background: transparent;
+    margin-right: 10px;
+}
+
+.searchInput:focus{
+    outline-width: 0;
+}
+
+.searchInput::placeholder{
+    width: 100%;
+    text-align: center;
+    color: rgb(202, 202, 202);
+    font-size: 15px;
+    padding: 10px;
+    font-weight: 300;
+}

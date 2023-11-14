@@ -1,0 +1,76 @@
+.homeWrapper .about{
+    padding: 50px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    text-wrap: pretty;
+    line-height: 30px;
+    letter-spacing: 1.25px;
+}
+
+.about p{
+    font-weight: 300;
+}
+
+.icon{
+    height: 24px;
+    width: 24px;
+}
+
+.timelineWrapper{
+    text-align: center;
+    font-weight: 200;
+    font-size: 20px;
+    margin-top: 20vh;
+    height: 75vh;
+    transition: opacity 1s ease;
+}
+.homeContent {
+    width: 100%;
+    height: 100vh;
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: sticky;
+    top: 0;
+    transition: opacity .6s ease;
+    scroll-behavior: smooth;
+    font-size: 19px;
+}
+
+.memoji{
+    height: 17rem;
+    width: 17rem;
+}
+
+.highlight{
+    color: rgb(19, 24, 101);
+    font-weight: 600;
+    
+}
+
+.MuiTimelineDot-root{
+    background-color: white !important;
+    border: 1px solid grey !important;
+    padding: 7px !important;
+}
+
+.sliderIcon{
+    height: 20px;
+    width: 20px;
+}
+
+.slider{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slider-wrapper{
+    display: none !important;
+}
+
+.hidden {
+    opacity: 0;
+}

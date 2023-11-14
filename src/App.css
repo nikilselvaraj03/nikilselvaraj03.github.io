@@ -1,0 +1,33 @@
+.App {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.light-css{
+  background-color: #fefefe;
+  color: rgb(75, 75, 75);
+}
+
+.dark-css, .dark-css .MuiTypography-root{
+  color:#fff;
+  background-color: rgb(94, 94, 94);
+}
+
+.dark-css .paper {
+  background-color: rgb(55, 55, 55) !important;
+  color: white !important;
+}
+
+.dark-css .highlight{
+  color: rgb(255, 213, 0);
+}
+
+.dark-css .next {
+  background-color: #2e2e2e !important;
+  color: yellow !important;
+}
+
+.dark-css .linkToLearnMore:hover {
+  background-color: rgb(254, 254, 254);
+}

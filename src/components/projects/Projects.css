@@ -1,0 +1,10 @@
+.project {
+    height: 74vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project__title{
+    font-weight: 200;
+}
