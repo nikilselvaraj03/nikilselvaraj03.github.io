@@ -74,3 +74,8 @@
 .hidden {
     opacity: 0;
 }
+
+.css-1sohoek-MuiTimelineItem-root:nth-of-type(even) .MuiTimelineContent-root{
+    display: inline-flex;
+    justify-content: flex-end;
+}
