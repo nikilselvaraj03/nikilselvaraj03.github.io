@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.6981882b.css",
+    "main.css": "/static/css/main.fc044117.css",
     "main.js": "/static/js/main.e7e239fd.js",
     "static/media/iphone-photo-backups-second - 1317.jpeg": "/static/media/iphone-photo-backups-second - 1317.52227e40c462feea72c3.jpeg",
     "static/media/toppng.com-contact-us-phone-ico-1840x1840.png": "/static/media/toppng.com-contact-us-phone-ico-1840x1840.17533fc79bc47be2cdbf.png",
@@ -20,11 +20,11 @@
     "static/media/html-5.png": "/static/media/html-5.ff3cf75e3b7cbb4ea77c.png",
     "static/media/c-sharp-c.svg": "/static/media/c-sharp-c.93ba21ebf5c7f4e5fb94538c4c948fec.svg",
     "index.html": "/index.html",
-    "main.6981882b.css.map": "/static/css/main.6981882b.css.map",
+    "main.fc044117.css.map": "/static/css/main.fc044117.css.map",
     "main.e7e239fd.js.map": "/static/js/main.e7e239fd.js.map"
   },
   "entrypoints": [
-    "static/css/main.6981882b.css",
+    "static/css/main.fc044117.css",
     "static/js/main.e7e239fd.js"
   ]
 }
