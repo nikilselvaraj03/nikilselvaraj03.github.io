@@ -1,12 +1,14 @@
-import React, { useEffect } from 'react';
+import React, { useCallback, useEffect, useRef } from 'react';
 import "./navBar.css";
 import learnMore from '../../resources/image-from-rawpixel-id-6514508-original.png'
 import { Link } from 'react-router-dom';
 import { styled } from '@mui/material/styles';
 import Switch from '@mui/material/Switch';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { toggleTheme } from '../../reducers/themeSlice';
-
+import Particles from "react-tsparticles";
+import { loadSlim } from "tsparticles-slim";
+import profilePhoto from "../../resources/1246e80465c910f706fea53355ae15fb-sticker.png"
 const MaterialUISwitch = styled(Switch)(({ theme }) => ({
     width: 55,
     height: 30,
@@ -60,9 +62,23 @@ const MaterialUISwitch = styled(Switch)(({ theme }) => ({
   }));
   
 export const NavBar = () => {
-  useEffect(()=>{ window.scrollTo(0, 0)},[])
+  const  particlesContainer= useRef(null);
+  const theme = useSelector(state => state.theme.currentTheme)
+  useEffect(()=>{ 
+    return(()=>{
+      window.scrollTo(0, 0);
+    })
+  },[])
+  const particlesInit = useCallback(async engine => {
+    console.log(engine);
+    await loadSlim(engine);
+}, []);
+
+const particlesLoaded = useCallback(async container => {
+    await console.log(container);
+}, []);
     const scrollto = (ref) => {
-        document.getElementById(ref).scrollIntoView(true)
+        document.getElementById(ref).scrollIntoView(false)
     } 
     const dispatch = useDispatch()
     return (
@@ -71,18 +87,92 @@ export const NavBar = () => {
                 <span className='title'><Link to="/"> NIKIL SELVARAJ</Link></span>
 
                 <ul>
-                    <li onClick={()=>scrollto('homeContent')}>About</li>
-                    <li onClick={()=>scrollto('experience')}>Education</li>
-                    <li onClick={()=>scrollto('experience')}>Experience</li>
+                    <li onClick={()=>scrollto('about')}>About</li>
+                    <li onClick={()=>scrollto('skills')}>Skills</li>
+                    <li onClick={()=>scrollto('timeline_wrapper')}>Experience</li>
                     <li><span onClick={()=> dispatch(toggleTheme())}><MaterialUISwitch/> </span></li>
                 </ul>
             </div>
-            <div className='tagLineWrapper'>
-                <span className='tagline'>
+            
+            <div className='tagLineWrapper' ref={particlesContainer} id="particles-js">
+            <span className='profile_background'>
+              <img src={profilePhoto} style={{height:'13rem',width:'13rem', position:'relative', top:'-4rem'}}alt='Display Picture for Nikil'></img>
+            </span>
+            <span className='tagline'>
+              <div>
+                <h2>Hello, I'm Nikil Nandha Selvaraj.</h2>
                 <p>I'm a Full-stack Web and Mobile Development Engineer!</p>
-                <span className='next'>About me <img className='linkToLearnMore' src={learnMore} alt='linkToLearnMore' onClick={()=>scrollto('homeContent')}></img></span>
+                </div>
+                <span className='next'>About me <img className='linkToLearnMore' src={learnMore} alt='linkToLearnMore' onClick={()=>scrollto('about')}></img></span>
                 </span>
+                <Particles  id="tsparticles" container= {particlesContainer} options={{
+                fullScreen:{enable:false},
+                fpsLimit: 120,
+                interactivity: {
+                    events: {
+                        onClick: {
+                            enable: true,
+                            mode: "push",
+                        },
+                        onHover: {
+                            enable: true,
+                            mode: "repulse",
+                        },
+                        resize: true,
+                    },
+                    modes: {
+                        push: {
+                            quantity: 4,
+                        },
+                        repulse: {
+                            distance: 200,
+                            duration: 0.4,
+                        },
+                    },
+                },
+                particles: {
+                    color: {
+                        value: theme == 'light-css' ? "rgb(55, 55, 55)" : "#ffffff",
+                    },
+                    links: {
+                        color: theme == 'light-css' ? "rgb(55, 55, 55)" : "#ffffff",
+                        distance: 150,
+                        enable: false,
+                        opacity: 0.5,
+                        width: 1,
+                    },
+                    move: {
+                        direction: "none",
+                        enable: true,
+                        outModes: {
+                            default: "bounce",
+                        },
+                        random: false,
+                        speed: 3,
+                        straight: false,
+                    },
+                    number: {
+                        density: {
+                            enable: true,
+                            area: 700,
+                        },
+                        value: 60,
+                    },
+                    opacity: {
+                        value: 0.5,
+                    },
+                    shape: {
+                        type: "circle",
+                    },
+                    size: {
+                        value: { min: 1, max: 5 },
+                    },
+                },
+                detectRetina: true,
+            }} init={particlesInit} loaded={particlesLoaded}>
+            </Particles>
             </div>
+            
         </nav>
     )
 }

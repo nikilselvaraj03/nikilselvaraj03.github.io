@@ -12,39 +12,40 @@ import Education from '../education/education';
 import GraduateStudent from '../../resources/graduate-student (1).png'
 import BachelorStudent from '../../resources/graduating-student.png'
 import memoji from '../../resources/ce35d5e35d6789d1ab941604673d622c-sticker.png'
-import memoji2 from '../../resources/ee6f84215771afc9503050699b0f837d-sticker.png'
 import './home.css'
 import Experience from '../experience/experience';
 import angularPng from '../../resources/angular.png'
 import reactPng from '../../resources/React-icon.svg.png'
 import nodePng from '../../resources/1280px-Node.js_logo.svg.png'
 import pythonPng from '../../resources/Python-logo-notext.svg.png'
-import { Carousel } from 'react-responsive-carousel';
 import Projects from '../projects/Projects';
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { cyan, green, red, yellow } from '@mui/material/colors';
+import htmlPng from '../../resources/html-5.png'
+import cssPng from '../../resources/css-icon.png'
+import { cyan, green, grey, red, yellow } from '@mui/material/colors';
+import mongodbPng from '../../resources/mongodb.png'
+import csharppng from '../../resources/c-sharp-c.svg'
+import mySqlPng from '../../resources/mysql.png'
+import { Link } from 'react-router-dom';
 const Home = () => {
+  const [activeSlide, setActiveSlide] = useState(0);
   const [isHidden1, setIsHidden1] = useState(false);
   const [isHidden2, setIsHidden2] = useState(false);
   useEffect(()=>{
     const handleScroll1 = () => {
-      const stickyElement = document.querySelector('#homeContent');
-      const nextElement = document.querySelector('#homeContent2');
-
+      const stickyElement = document.querySelector('#about');
+      const nextElement = document.querySelector('#skills');
       const stickyRect = stickyElement.getBoundingClientRect();
       const nextRect = nextElement.getBoundingClientRect();
-
       setIsHidden1(nextRect.top < stickyRect.height -280);
     };
 
     const handleScroll2 = () => {
-      const stickyElement = document.querySelector('#homeContent2');
-      const nextElement = document.querySelector('#experience');
+      const stickyElement = document.querySelector('#skills');
+      const nextElement = document.querySelector('#timeline_wrapper');
 
       const stickyRect = stickyElement.getBoundingClientRect();
       const nextRect = nextElement.getBoundingClientRect();
-
-      setIsHidden2(nextRect.top < stickyRect.height - 200 );
+      setIsHidden2(nextRect.top < stickyRect.height - 280 );
     };
 
     window.addEventListener('scroll', handleScroll1);
@@ -57,31 +58,52 @@ const Home = () => {
   },[])
   return (
     <div className='homeWrapper'>
-      <div className={'homeContent '+ (isHidden1 && 'hidden')} id='homeContent'>
+      <div className={'homeContent '+ (isHidden1 && 'hidden')} id='about'>
         <div className='about'>
         <h2><i>Who am I?</i></h2>
-        <p> Hello, I'm <span className='highlight'>Nikil</span>, a <span className='highlight'>software engineer</span> based in Arlington, TX, who is experienced in taking fullstack applications from scratch to production.</p>
-        <p>I'm currently attending <span className='highlight'>University of Texas at Arlington</span> and will graduate in Dec 2023. With over <span className='highlight'>3 years of professional software development expertise</span>, I seek roles where I can leverage my problem-solving and communication skills to deliver high-quality software with the potential to impact millions of users. </p>
+        <p style={{marginTop:'25px', textOverflow:'ellipses', maxHeight:'90%', overflow:'auto'}}> I'm a software engineer based in Arlington, TX, with a proficiency in taking <span className='highlight'>full-stack</span> applications, from scratch to production. I'm all about building applications that are not just functional but are also <span className='highlight'>scalable, efficient, and seamlessly intuitive</span>. Currently, I'm balancing my coding adventures with studies at the University of Texas at Arlington, set to graduate in Dec 2023.<br/><br/>With over <span className='highlight'>3 years of professional software development experience</span>, I'm on the lookout for roles where I can leverage my problem-solving and communication skills. I thrive on delivering high-quality software that has the potential to make a real impact on the experiences of millions of users.
+        <br/> <span className='highlight'>Let's code something great together!</span></p>
       </div>
+      <div className='d-flex flex-column align-items-center justify-content-around h-50'>
       <img src={memoji} className='memoji' alt="I'm Nikil"/>
+      <div className='d-flex justify-content-around w-100'>
+      <Link to={{pathname:'/static/media/Nikil Nandha_Selvaraj_Resume.pdf'}} target="_blank">
+        <span className='border border-1 rounded-pill shadow-sm bg-body fw-light px-3 pill py-1'>Resume</span></Link>
+        <Link to="https://www.linkedin.com/in/nikil-nandha-s/" target="_blank">
+         <span className='border border-1 bg-body fw-light  px-3 pill py-1 rounded-pill shadow-sm'>LinkedIn</span></Link></div>
+      </div>
+      
       </div>
 
-      <div className={'homeContent '+(isHidden2 && 'hidden') } id='homeContent2'>
-        <div className='slider'>
-        <Carousel emulateTouch={true} autoPlay={true} interval={1000} showThumbs={false} showIndicators={false} infiniteLoop={true}>
-          <div><img className='sliderIcon' src={angularPng} /></div>
-          <div><img className='sliderIcon' src={pythonPng} /></div>
-          <div><img className='sliderIcon' src={reactPng} /></div>
-          <div><img className='sliderIcon' src={nodePng} /></div>
-          </Carousel>
-        <img src={memoji2} className='memoji' alt="I'm Nikil"/>
+      <div className={'homeContent '+(isHidden2 && 'hidden') } id='skills'>
+        
+      <div className='carousel_wrapper'>
+      <span style={{fontSize:'22px', fontWeight:'300', textAlign:'center', letterSpacing:'1.5px', marginBottom:'10%'}}>Technologies i have worked on</span>
+      <div style={{width:'100%', display:'flex', flexDirection:'column', alignItems:'center'}}>
+      <div style={{display:'flex', justifyContent:'space-around', width:'90%'}}>
+          <div key='slide1'><img className='sliderIconLarge'  src={htmlPng} /></div>
+          <div key='slide2'><img className='sliderIconLarge'  src={cssPng} /></div>
+          <div key='slide3'><img className='sliderIcon' src={angularPng} /></div>
+          <div key='slide4'><img className='sliderIcon' src={reactPng} /></div>
+          <div key='slide5'><img className='sliderIcon' src={nodePng} /></div>
+      </div>
+        <div style={{display:'flex', justifyContent:'space-between',width:'70%', marginTop:'10%'}}>
+          <div key='slide1'><img className='sliderIcon' src={pythonPng} /></div>
+          <div key='slide2'><img className='sliderIcon' src={csharppng} /></div>
+          <div key='slide3'><img className='sliderIcon' src={mongodbPng} /></div>
+          <div key='slide4'><img className='sliderIcon' src={mySqlPng} /></div>
+      </div>
+      </div>
         </div>
         <div className='about'>
         <h2><i>What do i do?</i></h2>
-        <p>I'm a skilled front-end and backend developer with proficiency in <span style={{color:cyan[400], fontWeight:400}}>React.js</span>, <span style={{color:red.A200, fontWeight:400}}>Angular</span>, <span style={{color:green[800], fontWeight:400}}>Node.js</span>, <span style={{color:'#6a1677', fontWeight:400}}>C#</span>, <span style={{color:'#7377ae', fontWeight:400}}>PHP</span>, and <span style={{color:yellow[700], fontWeight:400}}>Python</span>. Specialized in MERN and MEAN stack projects, with a track record of developing successful native mobile applications using React Native.</p></div>
+        <p>I'm a skilled front-end and backend developer with proficiency in <span style={{color:cyan[400], fontWeight:400}}>React.js</span>, <span style={{color:red.A200, fontWeight:400}}>Angular</span>, <span style={{color:green[800], fontWeight:400}}>Node.js</span>, <span style={{color:'#6a1677', fontWeight:400}}>C#</span>, <span style={{color:'#7377ae', fontWeight:400}}>PHP</span>, and <span style={{color:yellow[700], fontWeight:400}}>Python</span>. Specialized in MERN and MEAN stack projects, with a track record of developing successful native mobile applications using React Native.</p>
+        <p> I have experience working with workflow tools such as Git, Jira, Jenkins, Docker and Kubernetes. I've also worked at Amazon, where i was working with AWS tools and Linux OS.
+        </p></div>
       </div>
 
-    <div className={'timelineWrapper ' + (!isHidden2 && 'hidden')} id='experience'> Education and Experience Timeline
+    <div className={'timelineWrapper ' + (!isHidden2 && 'hidden')} id='timeline_wrapper'> <div style={{marginBottom:'3rem'}}>Education and Experience Timeline</div> 
+    <div >
     <Timeline position="alternate">
       <TimelineItem>
         <TimelineOppositeContent
@@ -162,6 +184,7 @@ const Home = () => {
         </TimelineContent>
       </TimelineItem>
     </Timeline>
+    </div>
     </div>
 
     <Projects/>

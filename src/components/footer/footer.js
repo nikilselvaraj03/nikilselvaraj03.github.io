@@ -18,9 +18,9 @@ const FooterComp = () => {
                 window.location.href = `mailto:nikilselvaraj03@gmail.com`;
                 e.preventDefault();
             }}><img className='logo' src={email} alt='email'></img><span>nikilselvaraj003@gmail.com</span></Link></span>
-        <span ><Link className='links' to='https://www.linkedin.com/in/nikil-nandha-s/'> <img className='logo' src='https://blog.waalaxy.com/wp-content/uploads/2021/01/linkedin-7-300x300.png' alt='linkedin'></img><span>NIKIL NANDHA S</span></Link></span>
+        <span ><Link className='links' to='https://www.linkedin.com/in/nikil-nandha-s/' target="_blank"> <img className='logo' src='https://blog.waalaxy.com/wp-content/uploads/2021/01/linkedin-7-300x300.png' alt='linkedin'></img><span>NIKIL NANDHA S</span></Link></span>
         <span  className='links'><img className='logo' src={phonepng} alt='phone'></img><span>(469) 487-1321</span></span>
-        <span ><Link className='links' to= 'https://github.com/nikilselvaraj03'><img className='logo' src={github} alt='github'></img><span>nikilselvaraj03</span></Link></span>
+        <span ><Link className='links' to= 'https://github.com/nikilselvaraj03' target="_blank"><img className='logo' src={github} alt='github'></img><span>nikilselvaraj03</span></Link></span>
     </div>
    </footer>
   )

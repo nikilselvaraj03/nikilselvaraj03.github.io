@@ -1,17 +1,20 @@
 nav{
     height: 100vh;
     width: 100%;
-    background: url('../../resources/iphone-photo-backups-second\ -\ 1317.jpeg') center center no-repeat;
+    background: white;
     background-size:cover;
+}
+
+nav a {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    color: #ffffff;
+    letter-spacing: 2px;
+    font-weight: 600;
 }
 
 a{
     text-decoration: none;
-    font-size: 20px;
-    color: #ffffff;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    letter-spacing: 2px;
-    font-weight: 700;
 }
 nav .navHeader{
     display: flex;
@@ -20,11 +23,19 @@ nav .navHeader{
     color: white;
     font-weight: 300;
     font-size: 14px;
-    padding: 10px;
+    padding: 26px;
     height: 2rem;
-    background-color: rgba(33, 33, 33, 0.5);
+    background-color: rgba(33, 33, 33, 0.856);
     position: sticky;
     top: 0;
+    z-index: 10;
+}
+#tsparticles{
+    display: flex;
+    position: absolute;
+    z-index: 0;
+    background-color: #ffffff00;
+    height: 94%;
 }
 
 .navHeader .title{
@@ -37,6 +48,7 @@ nav ul{
     list-style: none;
     justify-content: space-around;
     align-items: center;
+    margin: 0;
 }
 
 nav ul li {
@@ -53,11 +65,24 @@ nav ul li:not(.search):hover{
 .tagLineWrapper{
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: space-around;
     align-items: center;
     height: calc(100% - 3.2rem);
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.45);
+}
+
+.profile_background{
+    z-index: 2;
+    height: 14rem;
+    width: 14rem;
+    border-radius: 15rem;
+    background-color: rgba(185, 181, 181, 0.825);
+    display: flex;
+    justify-content: center;
+    margin: 0 5rem;
+}
+.dark-css .profile_background{
+    background-color: rgb(93 93 93 / 83%);;
 }
 
 .tagline{
@@ -65,43 +90,47 @@ nav ul li:not(.search):hover{
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-start;
-    width: 30%;
+    width: 32%;
+    height: 40%;
     margin-right: 2rem;
+}
+.tagLineWrapper h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+    font-size: 2em;
+    margin-bottom: 1rem;
 }
 
 .tagLineWrapper p {
     display: flex;
     text-wrap: pretty;
-    color: #ffffff;
-    font-weight: 700;
-    font-size: 38px;
-    font-family: 'Josefin Sans', sans-serif;
-    text-shadow: -2px 1px 0  rgba(234, 206, 66, 0.725)
+    font-weight: 400;
+    font-size: 1.3em;
 }
 
 .tagLineWrapper .next {
     display: inline-flex;
     align-items: center;
     justify-content: space-between;
-    color: white;
-    font-weight: 200;
+    font-weight: 400;
     font-size: 13px;
     border-radius: 5rem;
     padding: 3px 2px 3px 15px;
-    background-color: rgba(121, 121, 121, 0.678);
+    border: 1.5px solid rgb(75, 75, 75);
+    z-index: 2;
 }
 
 
 .linkToLearnMore{
     margin-left: 10px;
-    height: 20px;
-    width: 20px;
+    height: 30px;
+    width: 30px;
     padding: 8px;
     border-radius: 20px;
-    background-color: rgba(255, 255, 255, 0.32);
+    background-color: rgb(79, 79, 79);
     cursor: pointer;
 }
 
 .linkToLearnMore:hover{
-    background-color: #2e2e2e;
+    background-color: rgb(139, 134, 123)
 }

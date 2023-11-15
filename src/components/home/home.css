@@ -6,12 +6,21 @@
     text-wrap: pretty;
     line-height: 30px;
     letter-spacing: 1.25px;
+    max-height: 95%;
 }
 
 .about p{
     font-weight: 300;
+    /* height: 90%;
+    max-height:95%;
+    text-overflow: ellipsis; */
 }
-
+.slider-container{
+    width: 40%;
+    position: relative;
+    z-index: 100;
+    top: 50;
+}
 .icon{
     height: 24px;
     width: 24px;
@@ -20,11 +29,33 @@
 .timelineWrapper{
     text-align: center;
     font-weight: 200;
-    font-size: 20px;
-    margin-top: 20vh;
-    height: 75vh;
+    font-size: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
     transition: opacity 1s ease;
 }
+
+.pill{
+    font-size: 16px;
+    border-color: #323847 !important;
+    color: #323847;
+    cursor: pointer;
+    letter-spacing: normal;
+}
+
+.pill:hover{
+    font-weight: 500 !important;
+    border-width: 1.5px !important;
+}
+
+.dark-css .pill {
+    background-color: rgb(94, 94, 94) !important;
+    border-color: white !important;
+    color: white;
+}
+
 .homeContent {
     width: 100%;
     height: 100vh;
@@ -57,25 +88,27 @@
 }
 
 .sliderIcon{
-    height: 20px;
-    width: 20px;
+    height: 55px;
+    width: 55px !important;
 }
 
-.slider{
+.sliderIconLarge{
+    height: 45px;
+    width: 45px;
+}
+.carousel_wrapper{
+    height: 50%;
+    width: 55%;
     display: flex;
+    justify-content: flex-start;
     flex-direction: column;
     align-items: center;
 }
-
-.slider-wrapper{
-    display: none !important;
-}
-
 .hidden {
     opacity: 0;
 }
 
-.css-1sohoek-MuiTimelineItem-root:nth-of-type(even) .MuiTimelineContent-root{
-    display: inline-flex;
-    justify-content: flex-end;
+.css-lvko3p:nth-of-type(2n) .MuiTimelineContent-root,.css-1sohoek-MuiTimelineItem-root:nth-of-type(even) .MuiTimelineContent-root{
+    display: inline-flex !important;
+    justify-content: flex-end !important;
 }

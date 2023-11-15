@@ -4,14 +4,21 @@
   width: 100%;
 }
 
-.light-css{
-  background-color: #fefefe;
+.light-css .App{
+  background-color: #ffffff;
   color: rgb(75, 75, 75);
 }
 
 .dark-css, .dark-css .MuiTypography-root{
   color:#fff;
   background-color: rgb(94, 94, 94);
+}
+
+.light-css .tagLineWrapper, .light-css #skills{
+  background:linear-gradient(#ffffff,#ececec);
+}
+.dark-css .tagLineWrapper, .dark-css #skills {
+  background-color: rgb(55, 55, 55);
 }
 
 .dark-css .paper {
@@ -24,10 +31,15 @@
 }
 
 .dark-css .next {
-  background-color: #2e2e2e !important;
-  color: yellow !important;
+  background-color: #515151 !important;
+  color: rgb(255, 191, 0) !important;
+  border:0.5px solid rgb(255, 191, 0) !important;
 }
 
 .dark-css .linkToLearnMore:hover {
-  background-color: rgb(254, 254, 254);
+  background-color: rgba(0, 0, 0, 0.749);
+}
+
+.dark-css .linkToLearnMore{
+  background-color: rgb(95, 87, 73);
 }
