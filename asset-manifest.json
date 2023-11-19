@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.585f0f8e.css",
-    "main.js": "/static/js/main.01a043c2.js",
+    "main.css": "/static/css/main.806df8f8.css",
+    "main.js": "/static/js/main.9f456c52.js",
     "static/media/IMG_4356-PhotoRoom-removebg-preview.png": "/static/media/IMG_4356-PhotoRoom-removebg-preview.bfa95453f8597dace3fb.png",
     "static/media/toppng.com-contact-us-phone-ico-1840x1840.png": "/static/media/toppng.com-contact-us-phone-ico-1840x1840.17533fc79bc47be2cdbf.png",
     "static/media/-sticker.png": "/static/media/1246e80465c910f706fea53355ae15fb-sticker.7ed225fd4be143c5e613.png",
@@ -21,11 +21,11 @@
     "static/media/c-sharp-c.svg": "/static/media/c-sharp-c.93ba21ebf5c7f4e5fb94538c4c948fec.svg",
     "index.html": "/index.html",
     "static/media/linkedin.svg": "/static/media/linkedin.6816e68940017320dc5de1ce490d9681.svg",
-    "main.585f0f8e.css.map": "/static/css/main.585f0f8e.css.map",
-    "main.01a043c2.js.map": "/static/js/main.01a043c2.js.map"
+    "main.806df8f8.css.map": "/static/css/main.806df8f8.css.map",
+    "main.9f456c52.js.map": "/static/js/main.9f456c52.js.map"
   },
   "entrypoints": [
-    "static/css/main.585f0f8e.css",
-    "static/js/main.01a043c2.js"
+    "static/css/main.806df8f8.css",
+    "static/js/main.9f456c52.js"
   ]
 }
