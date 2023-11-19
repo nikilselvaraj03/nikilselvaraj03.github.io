@@ -96,7 +96,7 @@ const particlesLoaded = useCallback(async container => {
             
             <div className='tagLineWrapper' ref={particlesContainer} id="particles-js">
             <span className='profile_background'>
-              <img src={profilePhoto} style={{height:'13rem',width:'13rem', position:'relative', top:'-4rem'}}alt='Display Picture for Nikil'></img>
+              <img src={profilePhoto} style={{height:'14rem',width:'14rem', position:'relative', top:'-4rem'}}alt='Display Picture for Nikil'></img>
             </span>
             <span className='tagline'>
               <div>
@@ -154,9 +154,9 @@ const particlesLoaded = useCallback(async container => {
                     number: {
                         density: {
                             enable: true,
-                            area: 700,
+                            area: 950,
                         },
-                        value: 60,
+                        value: 50,
                     },
                     opacity: {
                         value: 0.5,
