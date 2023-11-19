@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.bba5a984.css",
+    "main.css": "/static/css/main.9acca39c.css",
     "main.js": "/static/js/main.dccbdf6a.js",
     "static/media/IMG_4356-PhotoRoom-removebg-preview.png": "/static/media/IMG_4356-PhotoRoom-removebg-preview.bfa95453f8597dace3fb.png",
     "static/media/toppng.com-contact-us-phone-ico-1840x1840.png": "/static/media/toppng.com-contact-us-phone-ico-1840x1840.17533fc79bc47be2cdbf.png",
@@ -20,11 +20,11 @@
     "static/media/html-5.png": "/static/media/html-5.ff3cf75e3b7cbb4ea77c.png",
     "static/media/c-sharp-c.svg": "/static/media/c-sharp-c.93ba21ebf5c7f4e5fb94538c4c948fec.svg",
     "index.html": "/index.html",
-    "main.bba5a984.css.map": "/static/css/main.bba5a984.css.map",
+    "main.9acca39c.css.map": "/static/css/main.9acca39c.css.map",
     "main.dccbdf6a.js.map": "/static/js/main.dccbdf6a.js.map"
   },
   "entrypoints": [
-    "static/css/main.bba5a984.css",
+    "static/css/main.9acca39c.css",
     "static/js/main.dccbdf6a.js"
   ]
 }
