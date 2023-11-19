@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.bba5a984.css",
-    "main.js": "/static/js/main.ae4a6639.js",
+    "main.js": "/static/js/main.dccbdf6a.js",
     "static/media/IMG_4356-PhotoRoom-removebg-preview.png": "/static/media/IMG_4356-PhotoRoom-removebg-preview.bfa95453f8597dace3fb.png",
     "static/media/toppng.com-contact-us-phone-ico-1840x1840.png": "/static/media/toppng.com-contact-us-phone-ico-1840x1840.17533fc79bc47be2cdbf.png",
     "static/media/-sticker.png": "/static/media/1246e80465c910f706fea53355ae15fb-sticker.7ed225fd4be143c5e613.png",
@@ -21,10 +21,10 @@
     "static/media/c-sharp-c.svg": "/static/media/c-sharp-c.93ba21ebf5c7f4e5fb94538c4c948fec.svg",
     "index.html": "/index.html",
     "main.bba5a984.css.map": "/static/css/main.bba5a984.css.map",
-    "main.ae4a6639.js.map": "/static/js/main.ae4a6639.js.map"
+    "main.dccbdf6a.js.map": "/static/js/main.dccbdf6a.js.map"
   },
   "entrypoints": [
     "static/css/main.bba5a984.css",
-    "static/js/main.ae4a6639.js"
+    "static/js/main.dccbdf6a.js"
   ]
 }
