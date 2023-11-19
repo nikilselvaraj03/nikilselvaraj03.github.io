@@ -1,5 +1,18 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@property --angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+  }
+
+
 nav{
-    height: 100vh;
     width: 100%;
     background: white;
     background-size:cover;
@@ -7,29 +20,33 @@ nav{
 
 nav a {
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 20px;
+    font-size: 2rem;
     color: #ffffff;
-    letter-spacing: 2px;
+    letter-spacing: .2rem;
     font-weight: 600;
+}
+nav a:hover{
+    color: white;
 }
 
 a{
     text-decoration: none;
 }
-nav .navHeader{
+.navHeader{
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: white;
     font-weight: 300;
-    font-size: 14px;
-    padding: 26px;
+    font-size: 1.6rem;
+    padding: 3rem;
     height: 2rem;
     background-color: rgba(33, 33, 33, 0.856);
     position: sticky;
     top: 0;
-    z-index: 10;
+    z-index: 100;
 }
+
 #tsparticles{
     display: flex;
     position: absolute;
@@ -52,7 +69,7 @@ nav ul{
 }
 
 nav ul li {
-    padding: 5px 10px;
+    padding: 0.5rem 1rem;
     border-radius: 5rem;
     cursor: pointer;
 }
@@ -63,6 +80,7 @@ nav ul li:not(.search):hover{
 }
 
 .tagLineWrapper{
+    height: calc(100vh - 2rem) !important;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -70,19 +88,66 @@ nav ul li:not(.search):hover{
     height: calc(100% - 3.2rem);
     width: 100%;
 }
+.timelineWrapper .MuiPaper-root{
+    width: 100% !important;
+    height: 12rem !important;
+}
+nav .hamburger_menu{
+    display: none;
+    height:6rem ;
+    width:6rem ;
+    padding: 1rem;
+    flex-direction: column;
+    cursor: pointer;
+    
+}
+.hamburger_menu span{
+    height: 30%;
+    margin: .4rem;
+    width: 100%;
+    background-color: white;
+    border-radius: 1rem;
+}
+
+.hamburger_menu.close span{
+    height: 10%;
+    width: 75%;
+}
+.hamburger_menu.close span:last-child{
+    display: none;
+}
+
+.hamburger_menu.close span:first-child{
+    transition: all .45s ease;
+    transform: rotate(45deg) translateY(.8rem);
+}
+
+.hamburger_menu.close span:nth-child(2){
+    transform: rotate(135deg) translateY(.9rem);
+}
+
+
+.fade-in-out {
+    opacity: 1;
+    transition: opacity .6s ease-in-out;
+  }
+  
+  .fade-out {
+    opacity: 0.5;
+  }
 
 .profile_background{
     z-index: 2;
-    height: 15rem;
-    width: 15rem;
-    border-radius: 15rem;
-    background-color: rgba(185, 181, 181, 0.825);
+    height: 25rem;
+    width: 25rem;
+    border-radius: 25rem;
+    background-color: rgba(163, 160, 160, 0.825);
     display: flex;
     justify-content: center;
-    margin: 0 5rem;
+    margin: 0 15rem;
 }
 .dark-css .profile_background{
-    background-color: rgb(93 93 93 / 83%);;
+    background-color: rgb(93 93 93 / 83%);
 }
 
 .tagline{
@@ -92,20 +157,20 @@ nav ul li:not(.search):hover{
     align-items: flex-start;
     width: 32%;
     height: 40%;
-    margin-right: 2rem;
+    margin-right: 4rem;
 }
 .tagLineWrapper h2 {
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 600;
-    font-size: 2.5em;
-    margin-bottom: 1rem;
+    font-size: 4rem;
+    margin-bottom: 2rem;
 }
 
 .tagLineWrapper p {
     display: flex;
     text-wrap: pretty;
     font-weight: 400;
-    font-size: 1.6em;
+    font-size:2.3rem;
 }
 
 .tagLineWrapper .next {
@@ -113,24 +178,73 @@ nav ul li:not(.search):hover{
     align-items: center;
     justify-content: space-between;
     font-weight: 400;
-    font-size: 1.1em;
+    font-size: 1.6rem;
     border-radius: 5rem;
-    padding: 3px 2px 3px 15px;
-    border: 1.5px solid rgb(75, 75, 75);
+    padding: .3rem .2rem .3rem 1.5rem;
+    border: .15rem solid rgb(75, 75, 75);
     z-index: 2;
 }
 
 
 .linkToLearnMore{
-    margin-left: 10px;
-    height: 2em;
-    width: 2em;
-    padding: 8px;
-    border-radius: 20px;
+    position: relative;
+    height: 3.2rem;
+    width: 3rem;
+    padding: .7rem;
+    border-radius: 2rem;
     background-color: rgb(79, 79, 79);
     cursor: pointer;
+}
+.btn{
+    all: unset;
+    position: relative;
+    border-radius: 2rem;
+    margin-left: 1rem;
+    z-index: 2;
+}
+.btn::before,
+.btn::after {
+  content: "";
+  position: absolute;
+  inset: -.25rem;
+  background-color: inherit;
+  border-radius: inherit;
+  animation: rotate 2s infinite linear;
+  z-index: -1;
+  background-image: conic-gradient(
+    from var(--angle) at 50% 50%,
+    transparent 0%,
+    transparent 33%,
+    hsl(28, 66%, 57%) 50%,
+    transparent 66%,
+    transparent 100%
+  );
+}
+
+.dark-css .btn::before,.dark-css .btn::after{
+    background-image: conic-gradient(
+    from var(--angle) at 50% 50%,
+    transparent 0%,
+    transparent 33%,
+    hsl(250 66% 61%) 50%,
+    transparent 66%,
+    transparent 100%
+  );
+}
+  
+ .btn::before{
+    filter: blur(1rem);
 }
 
 .linkToLearnMore:hover{
     background-color: rgb(139, 134, 123)
 }
+
+@keyframes rotate {
+    0% {
+      --angle: 0deg;
+    }
+    100% {
+      --angle: 360deg;
+    }
+  }

@@ -1,7 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.92724d61.css",
-    "main.js": "/static/js/main.27976f0c.js",
+    "main.css": "/static/css/main.afc93405.css",
+    "main.js": "/static/js/main.ae4a6639.js",
+    "static/media/IMG_4356-PhotoRoom-removebg-preview.png": "/static/media/IMG_4356-PhotoRoom-removebg-preview.bfa95453f8597dace3fb.png",
     "static/media/toppng.com-contact-us-phone-ico-1840x1840.png": "/static/media/toppng.com-contact-us-phone-ico-1840x1840.17533fc79bc47be2cdbf.png",
     "static/media/-sticker.png": "/static/media/1246e80465c910f706fea53355ae15fb-sticker.7ed225fd4be143c5e613.png",
     "static/media/React-icon.svg.png": "/static/media/React-icon.svg.3e9820dc44ddde88975e.png",
@@ -19,11 +20,11 @@
     "static/media/html-5.png": "/static/media/html-5.ff3cf75e3b7cbb4ea77c.png",
     "static/media/c-sharp-c.svg": "/static/media/c-sharp-c.93ba21ebf5c7f4e5fb94538c4c948fec.svg",
     "index.html": "/index.html",
-    "main.92724d61.css.map": "/static/css/main.92724d61.css.map",
-    "main.27976f0c.js.map": "/static/js/main.27976f0c.js.map"
+    "main.afc93405.css.map": "/static/css/main.afc93405.css.map",
+    "main.ae4a6639.js.map": "/static/js/main.ae4a6639.js.map"
   },
   "entrypoints": [
-    "static/css/main.92724d61.css",
-    "static/js/main.27976f0c.js"
+    "static/css/main.afc93405.css",
+    "static/js/main.ae4a6639.js"
   ]
 }

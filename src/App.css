@@ -4,20 +4,150 @@
   width: 100%;
 }
 
-.light-css .App{
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  :root{
+    font-size: 6px;
+  }
+  .homeContent .info .info__card {
+    height: 52rem  !important;
+    min-width: 65% !important;
+  }
+  .info__card .pill{
+    font-size: 2.5rem !important;
+    padding: .5rem 2rem !important;
+  }
+  nav ul{
+    display: none !important;
+    z-index: 101;
+    top: 7.9rem;
+    left:0 ;
+    width: 100%;
+    background-color: #494949;
+    position: absolute;
+    flex-direction: column;
+  }
+  nav .hamburger_menu{
+    display: flex !important;
+  }
+  nav ul.show{
+    display: flex !important;
+  }
+  nav ul li{
+    display: flex;
+    align-items: center;
+    height: 6rem;
+    padding: 1rem 0;
+  }
+  nav{
+    height: 8rem !important;
+  }
+  #skills>div{
+    justify-content: center;
+  }
+  nav ul li:last-child span>span{
+    display: none;
+  }
+  nav ul li:last-child span::before{
+    content: "Change To Dark Theme";
+  }
+  .dark-css nav ul li:last-child span::before{
+    content: "Change To Light Theme";
+  }
+  body{
+    width: 100dvw !important;
+    height: 100dvh !important;
+    max-width: 100dvw !important;
+  }
+  body .tagLineWrapper{
+    width: 100%;
+    height: 50vh !important;
+    flex-direction: row-reverse;
+  }
+  .homeContent{
+    height: 100dvh !important;
+    flex-direction: column;
+    justify-content: center !important;
+    align-items: center;
+  }
+
+  .homeContent>div{
+    flex: 1 !important;
+  }
+  .homeContent .about{
+    font-size: small;
+    letter-spacing: normal !important;
+    line-height: 3rem !important;
+  }
+  .homeContent .carousel_wrapper{
+    width: 100%;
+    height: unset;
+  }
+ .tagline{
+  align-items: center;
+  height: 80% !important;
+  width: 100% !important;
+  padding: 4rem;
+  margin: 0 !important;
+  }
+  .tagLineWrapper .profile_background{
+    height: 15rem;
+    width: 15rem;
+    padding: 1.5rem;
+    margin-right: 0rem;
+  }
+  .profile_background img{
+    height: 13rem !important;
+    width: 13rem !important;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  :root{
+    font-size: 6px;
+  }
+  body{
+    width: 100vw;
+    height: 100vh;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  :root{
+    font-size: 8px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  :root{
+    font-size: 8px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  :root{
+    font-size: 10px;
+  }
+}
+ 
+.light-css .App, .light-css .homeWrapper > div:nth-child(odd){
   background-color: #ffffff;
   color: rgb(75, 75, 75);
 }
 
-.dark-css, .dark-css .MuiTypography-root{
+.dark-css, .dark-css .MuiTypography-root, .dark-css .homeWrapper > div:nth-child(odd){
   color:#fff;
   background-color: rgb(94, 94, 94);
 }
 
-.light-css .tagLineWrapper, .light-css #skills{
+.light-css .tagLineWrapper,.light-css .homeWrapper > div:nth-child(even){
   background:linear-gradient(#ffffff,#ececec);
 }
-.dark-css .tagLineWrapper, .dark-css #skills {
+.dark-css .tagLineWrapper, .dark-css .homeWrapper > div:nth-child(even) {
   background-color: rgb(55, 55, 55);
 }
 
@@ -37,9 +167,37 @@
 }
 
 .dark-css .linkToLearnMore:hover {
-  background-color: rgba(0, 0, 0, 0.749);
+  background-color: rgb(46 46 46);
 }
 
 .dark-css .linkToLearnMore{
-  background-color: rgb(95, 87, 73);
+  background-color: rgb(78, 68, 51);
+}
+
+.homeWrapper .info{
+  flex: 2;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  order: 2;
+}
+.info__card{
+  min-width: 40% !important;
+  border-radius: 1.5rem !important;
+}
+
+.info__card:hover{
+  transform: scale(1.02);
+}
+
+.dark-css .info__card {
+  background-color: #494949;
+  box-shadow: #ffffff;
+}
+
+@media (max-width:500px){
+  body{
+  width: auto;}
 }

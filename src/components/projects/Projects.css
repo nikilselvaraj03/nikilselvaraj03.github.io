@@ -1,11 +1,43 @@
 .project {
-    height: 74vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-around;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    background-color: #e1e1e1;
 }
 
 .project__title{
     font-weight: 200;
     font-size: 22px;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.projects{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.seperators {
+    flex-direction: row;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    
+}
+
+.inline_seperator{
+    flex: 1;
+    display: flex;
+    justify-content: center;
 }

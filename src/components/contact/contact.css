@@ -1,0 +1,6 @@
+.contact{
+    height: 75vh;
+    width: 100%;
+    position: sticky;
+    z-index: 4;
+}
