@@ -1,9 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.4aa387e8.css",
-    "main.js": "/static/js/main.9f456c52.js",
+    "main.css": "/static/css/main.33c70543.css",
+    "main.js": "/static/js/main.65b20dac.js",
     "static/media/IMG_4356-PhotoRoom-removebg-preview.png": "/static/media/IMG_4356-PhotoRoom-removebg-preview.bfa95453f8597dace3fb.png",
-    "static/media/toppng.com-contact-us-phone-ico-1840x1840.png": "/static/media/toppng.com-contact-us-phone-ico-1840x1840.17533fc79bc47be2cdbf.png",
     "static/media/-sticker.png": "/static/media/1246e80465c910f706fea53355ae15fb-sticker.7ed225fd4be143c5e613.png",
     "static/media/React-icon.svg.png": "/static/media/React-icon.svg.3e9820dc44ddde88975e.png",
     "static/media/Python-logo-notext.svg.png": "/static/media/Python-logo-notext.svg.6cd7959dfc13675ee994.png",
@@ -14,18 +13,18 @@
     "static/media/1280px-Node.js_logo.svg.png": "/static/media/1280px-Node.js_logo.svg.e71346fe0fec16ec5f6e.png",
     "static/media/graduating-student.png": "/static/media/graduating-student.924255e34d8b33be3574.png",
     "static/media/kisspng-amazon-com-amazon-marketplace-online-shopping-amaz-amazon-5adb6f1aa70e84.png": "/static/media/kisspng-amazon-com-amazon-marketplace-online-shopping-amaz-amazon-5adb6f1aa70e84.4953461215243302666843.47d421e94da324918619.png",
+    "static/media/toppng.com-contact-us-phone-ico-1840x1840.png": "/static/media/toppng.com-contact-us-phone-ico-1840x1840.097ef67f1a9a19cbff3b.png",
+    "static/media/pngwing.com.png": "/static/media/pngwing.com.a855c3975c028d8069f5.png",
     "static/media/software-engineer.png": "/static/media/software-engineer.f3f895303f1dd1f8a397.png",
-    "static/media/pngwing.com.png": "/static/media/pngwing.com.987334e9f782cc505f25.png",
-    "static/media/pngfind.com-myspace-logo-png-2457972.png": "/static/media/pngfind.com-myspace-logo-png-2457972.c1977d1447a6576a37b9.png",
+    "static/media/linkedin.png": "/static/media/linkedin.72e658dc19f8a0cb3fca.png",
     "static/media/html-5.png": "/static/media/html-5.ff3cf75e3b7cbb4ea77c.png",
     "static/media/c-sharp-c.svg": "/static/media/c-sharp-c.93ba21ebf5c7f4e5fb94538c4c948fec.svg",
     "index.html": "/index.html",
-    "static/media/linkedin.svg": "/static/media/linkedin.6816e68940017320dc5de1ce490d9681.svg",
-    "main.4aa387e8.css.map": "/static/css/main.4aa387e8.css.map",
-    "main.9f456c52.js.map": "/static/js/main.9f456c52.js.map"
+    "main.33c70543.css.map": "/static/css/main.33c70543.css.map",
+    "main.65b20dac.js.map": "/static/js/main.65b20dac.js.map"
   },
   "entrypoints": [
-    "static/css/main.4aa387e8.css",
-    "static/js/main.9f456c52.js"
+    "static/css/main.33c70543.css",
+    "static/js/main.65b20dac.js"
   ]
 }
