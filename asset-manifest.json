@@ -1,30 +1,34 @@
 {
   "files": {
-    "main.css": "/static/css/main.8e74354d.css",
-    "main.js": "/static/js/main.a22b16c5.js",
+    "main.css": "/static/css/main.b8773bdc.css",
+    "main.js": "/static/js/main.3e5d2cb5.js",
     "static/media/IMG_4356-PhotoRoom-removebg-preview.png": "/static/media/IMG_4356-PhotoRoom-removebg-preview.bfa95453f8597dace3fb.png",
+    "static/media/Anna University.png": "/static/media/Anna University.da1f609952c63c726404.png",
     "static/media/-sticker.png": "/static/media/1246e80465c910f706fea53355ae15fb-sticker.7ed225fd4be143c5e613.png",
     "static/media/React-icon.svg.png": "/static/media/React-icon.svg.3e9820dc44ddde88975e.png",
     "static/media/Python-logo-notext.svg.png": "/static/media/Python-logo-notext.svg.6cd7959dfc13675ee994.png",
+    "static/media/reactfirebase.png": "/static/media/reactfirebase.cf0de90dbfe273530720.png",
     "static/media/mysql.png": "/static/media/mysql.5f322b18eed72ab5b059.png",
     "static/media/mongodb.png": "/static/media/mongodb.d5767e81605b3fd24c81.png",
-    "static/media/graduate-student (1).png": "/static/media/graduate-student (1).a360f67a51f0c1b41898.png",
+    "static/media/reactspring.jpg": "/static/media/reactspring.c126b4dd540aef4ff346.jpg",
     "static/media/image-from-rawpixel-id-6514508-original.png": "/static/media/image-from-rawpixel-id-6514508-original.fc32e6b543abc5aa8144.png",
     "static/media/1280px-Node.js_logo.svg.png": "/static/media/1280px-Node.js_logo.svg.e71346fe0fec16ec5f6e.png",
-    "static/media/graduating-student.png": "/static/media/graduating-student.924255e34d8b33be3574.png",
+    "static/media/543px-UTA_logomark.png": "/static/media/543px-UTA_logomark.ce1f3e7f4d8831309d8a.png",
     "static/media/kisspng-amazon-com-amazon-marketplace-online-shopping-amaz-amazon-5adb6f1aa70e84.png": "/static/media/kisspng-amazon-com-amazon-marketplace-online-shopping-amaz-amazon-5adb6f1aa70e84.4953461215243302666843.47d421e94da324918619.png",
     "static/media/toppng.com-contact-us-phone-ico-1840x1840.png": "/static/media/toppng.com-contact-us-phone-ico-1840x1840.097ef67f1a9a19cbff3b.png",
     "static/media/pngwing.com.png": "/static/media/pngwing.com.a855c3975c028d8069f5.png",
     "static/media/software-engineer.png": "/static/media/software-engineer.f3f895303f1dd1f8a397.png",
     "static/media/linkedin.png": "/static/media/linkedin.72e658dc19f8a0cb3fca.png",
     "static/media/html-5.png": "/static/media/html-5.ff3cf75e3b7cbb4ea77c.png",
+    "static/media/androidFirebase.jpeg": "/static/media/androidFirebase.90f0d50593053410b5d8.jpeg",
+    "static/media/android.webp": "/static/media/android.fd481a99ca0754af5097.webp",
     "static/media/c-sharp-c.svg": "/static/media/c-sharp-c.93ba21ebf5c7f4e5fb94538c4c948fec.svg",
     "index.html": "/index.html",
-    "main.8e74354d.css.map": "/static/css/main.8e74354d.css.map",
-    "main.a22b16c5.js.map": "/static/js/main.a22b16c5.js.map"
+    "main.b8773bdc.css.map": "/static/css/main.b8773bdc.css.map",
+    "main.3e5d2cb5.js.map": "/static/js/main.3e5d2cb5.js.map"
   },
   "entrypoints": [
-    "static/css/main.8e74354d.css",
-    "static/js/main.a22b16c5.js"
+    "static/css/main.b8773bdc.css",
+    "static/js/main.3e5d2cb5.js"
   ]
 }
