@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.b8773bdc.css",
-    "main.js": "/static/js/main.3e5d2cb5.js",
+    "main.css": "/static/css/main.da96816a.css",
+    "main.js": "/static/js/main.7341e113.js",
     "static/media/IMG_4356-PhotoRoom-removebg-preview.png": "/static/media/IMG_4356-PhotoRoom-removebg-preview.bfa95453f8597dace3fb.png",
     "static/media/Anna University.png": "/static/media/Anna University.da1f609952c63c726404.png",
     "static/media/-sticker.png": "/static/media/1246e80465c910f706fea53355ae15fb-sticker.7ed225fd4be143c5e613.png",
@@ -24,11 +24,11 @@
     "static/media/android.webp": "/static/media/android.fd481a99ca0754af5097.webp",
     "static/media/c-sharp-c.svg": "/static/media/c-sharp-c.93ba21ebf5c7f4e5fb94538c4c948fec.svg",
     "index.html": "/index.html",
-    "main.b8773bdc.css.map": "/static/css/main.b8773bdc.css.map",
-    "main.3e5d2cb5.js.map": "/static/js/main.3e5d2cb5.js.map"
+    "main.da96816a.css.map": "/static/css/main.da96816a.css.map",
+    "main.7341e113.js.map": "/static/js/main.7341e113.js.map"
   },
   "entrypoints": [
-    "static/css/main.b8773bdc.css",
-    "static/js/main.3e5d2cb5.js"
+    "static/css/main.da96816a.css",
+    "static/js/main.7341e113.js"
   ]
 }
