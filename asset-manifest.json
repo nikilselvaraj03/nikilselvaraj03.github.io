@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.a24e6be7.css",
+    "main.css": "/static/css/main.92f97ed1.css",
     "main.js": "/static/js/main.eec006b1.js",
     "static/media/IMG_4356-PhotoRoom-removebg-preview.png": "/static/media/IMG_4356-PhotoRoom-removebg-preview.bfa95453f8597dace3fb.png",
     "static/media/Anna University.png": "/static/media/Anna University.da1f609952c63c726404.png",
@@ -24,11 +24,11 @@
     "static/media/android.webp": "/static/media/android.fd481a99ca0754af5097.webp",
     "static/media/c-sharp-c.svg": "/static/media/c-sharp-c.93ba21ebf5c7f4e5fb94538c4c948fec.svg",
     "index.html": "/index.html",
-    "main.a24e6be7.css.map": "/static/css/main.a24e6be7.css.map",
+    "main.92f97ed1.css.map": "/static/css/main.92f97ed1.css.map",
     "main.eec006b1.js.map": "/static/js/main.eec006b1.js.map"
   },
   "entrypoints": [
-    "static/css/main.a24e6be7.css",
+    "static/css/main.92f97ed1.css",
     "static/js/main.eec006b1.js"
   ]
 }
