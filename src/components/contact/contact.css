@@ -93,6 +93,10 @@
     color: #f1f1f1;
 }
 
+.dark-css .form-control{
+    color: #fff;
+}
+
 .errorMessage{
     display: flex;
     padding-left: .5rem;
