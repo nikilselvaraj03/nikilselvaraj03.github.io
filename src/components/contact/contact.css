@@ -1,6 +1,132 @@
 .contact{
-    height: 75vh;
+    height: 85vh;
+    overflow: visible;
+    max-height: 120vh;
+    margin: 0;
+    display: flex;
     width: 100%;
+    max-width: UNSET;
+    align-items: center;
     position: sticky;
-    z-index: 4;
+    top: 0;
+    z-index: 7;
+    flex-wrap: wrap;
+}
+.social_links{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+.social_links>*{
+    display: flex;
+    height: 30%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.container{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.contact-card {
+    height: fit-content;
+    margin: 0;
+    width: 55%;
+    padding: 20px;
+    border-radius: 5px;
+    backdrop-filter: blur(6px);
+    display: flex;
+    justify-content: space-between;
+   }
+   
+   input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+   }
+   
+
+   .contact-card .form-control{
+    background-color: transparent;
+    padding: 1.3rem;
+    font-size: 1.3rem;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    border: unset;
+    border-radius: unset;
+    border-bottom: .5px solid grey;
+   }
+
+   .getintouch {
+    text-align: center;
+    font-weight: 600 !important;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: xx-large;}
+    
+.contact-card .form-control::selection {
+    all: unset !important;
+   }
+
+   .contact-card textarea.form-control{
+    border: .5px solid rgb(167, 167, 167) !important;
+    border-radius: .6rem;
+    height: 23rem;
+   }
+
+   .links {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: center;   
+}
+
+.dark-css .form-control::placeholder{
+    color: #f1f1f1;
+}
+
+.errorMessage{
+    display: flex;
+    padding-left: .5rem;
+    color: rgb(255, 98, 0);
+    font-size: .9rem;
+    margin-bottom: 3%;
+}
+.social_links-wrapper>div{
+        width: 80%;
+        height: 50%;
+        display: flex;
+        justify-content: space-between;
+}
+.social_links>span{  
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#tsparticlescontact{
+    display: none;
+    position: absolute;
+    z-index: -1;
+    background-color: #ffffff00;
+    height: 100%;
+    width: 100%;
+}
+.submit-btn{
+    margin: 3.5rem 0;
+}
+
+ .contact-card.card{
+    background-color: unset;
+ }
+ .dark-css .contact-card.card {
+    background-color: #505050;
 }

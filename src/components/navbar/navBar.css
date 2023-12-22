@@ -29,9 +29,7 @@ nav a:hover{
     color: white;
 }
 
-a{
-    text-decoration: none;
-}
+
 .navHeader{
     display: flex;
     justify-content: space-between;
@@ -88,10 +86,7 @@ nav ul li:not(.search):hover{
     height: calc(100% - 3.2rem);
     width: 100%;
 }
-.timelineWrapper .MuiPaper-root{
-    width: 100% !important;
-    height: 12rem !important;
-}
+
 nav .hamburger_menu{
     display: none;
     height:6rem ;

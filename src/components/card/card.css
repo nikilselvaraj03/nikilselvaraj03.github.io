@@ -1,7 +1,7 @@
 .card{
-    background-color: rgb(254, 254, 254);
-    width: 25rem;
-    height: 45%;
+    background-color: rgba(254, 254, 254, 0.615);
+    width: 95%;
+    height: 55%;
     border-radius: .4rem;
     cursor: pointer;
     display: flex;
@@ -84,5 +84,5 @@
 } */
 
 .dark-css .card{
-    background-color: rgb(85, 85, 85);
+    background-color: rgba(53, 53, 53, 0.608);
 }

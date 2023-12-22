@@ -11,8 +11,6 @@ import TimelineDot from '@mui/lab/TimelineDot';
 import AmazonIcon from '../../resources/kisspng-amazon-com-amazon-marketplace-online-shopping-amaz-amazon-5adb6f1aa70e84.4953461215243302666843.png'
 import SdeIcon from '../../resources/software-engineer.png'
 import Education from '../education/education';
-import GraduateStudent from '../../resources/graduate-student (1).png'
-import BachelorStudent from '../../resources/graduating-student.png'
 import memoji from '../../resources/IMG_4356-PhotoRoom-removebg-preview.png'
 import './home.css'
 import Experience from '../experience/experience';
@@ -25,7 +23,7 @@ import htmlPng from '../../resources/html-5.png'
 import cssPng from '../../resources/css-icon.png'
 import { cyan, green, red, yellow } from '@mui/material/colors';
 import mongodbPng from '../../resources/mongodb.png'
-import utaPng from '../../resources/uta.png'
+import utaPng from '../../resources/543px-UTA_logomark.png'
 import csharppng from '../../resources/c-sharp-c.svg'
 import mySqlPng from '../../resources/mysql.png'
 import { Link } from 'react-router-dom';
@@ -62,7 +60,8 @@ const Home = () => {
       <div className='homeContent' id='about'>
         <div className='about'>
           <h2><i>Who am I?</i></h2>
-          <p style={{ marginTop: '25px', textOverflow: 'ellipses', maxHeight: '90%' }}> I'm a software engineer based in Arlington, TX, with a proficiency in taking <span className='highlight'>full-stack</span> applications, from scratch to production. I'm all about building applications that are not just functional but are also <span className='highlight'>scalable, efficient, and seamlessly intuitive</span>. Currently, I'm balancing my coding adventures with studies at the University of Texas at Arlington, set to graduate in Dec 2023.<br /><br />With over <span className='highlight'>3 years of professional software development experience</span>, I'm on the lookout for roles where I can leverage my problem-solving and communication skills. I thrive on delivering high-quality software that has the potential to make a real impact on the experiences of millions of users.
+          <p style={{ marginTop: '25px', textOverflow: 'ellipses', maxHeight: '90%' }}> I'm a software engineer based in Arlington, TX, with a proficiency in taking <span className='highlight'>full-stack</span> applications, from scratch to production. I'm all about building applications that are not just functional but are also <span className='highlight'>scalable, efficient, and seamlessly intuitive</span>. 
+          I completed my Master's degree in Computer Science from the University of Texas at Arlington.<br /><br />With over <span className='highlight'>3 years of professional software development experience</span>, I'm on the lookout for roles where I can leverage my problem-solving and communication skills. I thrive on delivering high-quality software that has the potential to make a real impact on the experiences of millions of users.
             <br /> <span className='highlight'>Let's code something great together!</span></p>
         </div>
         <div className='info'>
@@ -71,15 +70,15 @@ const Home = () => {
             <span className='name'>Nikil Selvaraj</span>
             <img src={memoji} className='memoji' alt="I'm Nikil" />
             <div className='d-flex justify-content-around w-100'>
-              <Link to={{ pathname: '/static/media/Nikil Nandha_Selvaraj_Resume.pdf' }} target="_blank">
-                <span className='border border-1 rounded-pill shadow-sm bg-body fw-light px-3 pill py-1'>Resume</span></Link>
+              <Link to='https://drive.google.com/file/d/1FS_4QRLdlWJkbS_zPPomqloGGOS8eVpl/view?usp=drive_link' target="_blank">
+                <span className='border border-1 rounded-pill shadow-sm bg-body fw-light px-3 pill py-2'>Resume</span></Link>
               <Link to="https://www.linkedin.com/in/nikil-nandha-s/" target="_blank">
-                <span className='border border-1 bg-body fw-light  px-3 pill py-1 rounded-pill shadow-sm'>LinkedIn</span></Link></div>
+                <span className='border border-1 bg-body fw-light  px-3 pill py-2 rounded-pill shadow-sm'>LinkedIn</span></Link></div>
           </CardContent>
         </Card>
         </div>
       </div>
-
+      <Education/>
       <div className='homeContent' id='skills'>
 
         <div className='carousel_wrapper'>
@@ -102,34 +101,14 @@ const Home = () => {
         </div>
         <div className='about'>
           <h2><i>What do i do?</i></h2>
-          <p>I'm a skilled front-end and backend developer with proficiency in <span style={{ color: cyan[400], fontWeight: 400 }}>React.js</span>, <span style={{ color: red.A200, fontWeight: 400 }}>Angular</span>, <span style={{ color: green[800], fontWeight: 400 }}>Node.js</span>, <span style={{ color: '#982da9', fontWeight: 400 }}>C#</span>, <span style={{ color: '#7377ae', fontWeight: 400 }}>PHP</span>, and <span style={{ color: yellow[700], fontWeight: 400 }}>Python</span>. Specialized in MERN and MEAN stack projects, with a track record of developing successful native mobile applications using React Native.</p>
+          <p>I'm a skilled front-end and backend developer with proficiency in <span style={{ color: cyan[400], fontWeight: 400 }}>React.js</span>, <span style={{ color: red.A200, fontWeight: 400 }}>Angular</span>, <span style={{ color: green[500], fontWeight: 400 }}>Node.js</span>, <span style={{ color: '#982da9', fontWeight: 400 }}>C#</span>, <span style={{ color: '#7377ae', fontWeight: 400 }}>PHP</span>, and <span style={{ color: yellow[700], fontWeight: 400 }}>Python</span>. Specialized in MERN and MEAN stack projects, with a track record of developing successful native mobile applications using React Native.</p>
           <p> I have experience working with workflow tools such as Git, Jira, Jenkins, Docker and Kubernetes. I've also worked at Amazon, where i was working with AWS tools and Linux OS.
           </p></div>
       </div>
 
-      <div className='timelineWrapper' id='timeline_wrapper'> <div style={{ marginBottom: '3rem' }}>Education and Experience Timeline</div>
+      <div className='timelineWrapper' id='timeline_wrapper'> <div style={{ margin: '4rem 0 2rem 0' }}>Experience</div>
         <div >
           <Timeline position="alternate">
-            <TimelineItem>
-            <TimelineOppositeContent
-                sx={{ m: 'auto 0' }}
-                align="right"
-                variant="body2"
-                color="text.secondary"
-              >
-                Aug 2021 - Dec 2023
-              </TimelineOppositeContent>
-              <TimelineSeparator>
-                <TimelineConnector />
-                <TimelineDot>
-                  <img className='icon' src={GraduateStudent} ></img>
-                </TimelineDot>
-                <TimelineConnector />
-              </TimelineSeparator>
-              <TimelineContent sx={{ py: '12px', px: 2 }}>
-                <Education level='masters'></Education>
-              </TimelineContent>
-              </TimelineItem>
                 <TimelineItem>
               <TimelineOppositeContent
                 sx={{ m: 'auto 0' }}
@@ -186,26 +165,6 @@ const Home = () => {
               </TimelineSeparator>
               <TimelineContent sx={{ py: '12px', px: 2 }}>
                 <Experience company='ducen' />
-              </TimelineContent>
-            </TimelineItem>
-            <TimelineItem>
-              <TimelineOppositeContent
-                sx={{ m: 'auto 0' }}
-                align="right"
-                variant="body2"
-                color="text.secondary"
-              >
-                Aug 2015 - May 2019
-              </TimelineOppositeContent>
-              <TimelineSeparator>
-                <TimelineConnector sx={{ bgcolor: 'secondary.main' }} />
-                <TimelineDot>
-                  <img className='icon' src={BachelorStudent} ></img>
-                </TimelineDot>
-                <TimelineConnector />
-              </TimelineSeparator>
-              <TimelineContent sx={{ py: '12px', px: 2 }}>
-                <Education level='bachelors'></Education>
               </TimelineContent>
             </TimelineItem>
           </Timeline>

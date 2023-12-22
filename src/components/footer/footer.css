@@ -1,5 +1,5 @@
 .footerWrapper{
-    height: 25vh;
+    height: 15vh;
     background-color: rgb(62, 62, 62);
     color: #fff;
     padding: 15px;
@@ -11,32 +11,18 @@
     font-size: 1.5rem !important;
 }
 .logo {
-    height: 20px;
-    width: 30px;
+    height: 3rem;
+    width: 3rem;
 }
 
-.socialLinksWrapper{
-    margin-right: 4rem;
-    display: flex;
-    width: 100%;
-    justify-content: space-evenly;
-    align-items: center;
-    font-weight: 300 !important;
-    font-size: 1.5rem !important;
-}
 
-.links {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    
-}
+
 
 .links span{ font-weight: 300 !important;
-color: #fff;}
+    font-size: 2rem;}
 
 .links img {
-    padding-right: 10px;
+    margin-right: 1.5rem;
 }
 
 .copyrights{

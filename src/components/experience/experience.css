@@ -1,13 +1,27 @@
 .paper{
-    width: 50%;
-    padding: 1rem 0 1rem 2rem;
+    width: 70%;
+    padding: 2rem;
     font-weight: 300;
     text-align: left;
+    text-wrap: pretty;
     transition: all .5s ease !important;
+    height: max-content  !important;
 }
+.timelineWrapper .MuiTypography-root{
+    font-size: 1.4rem;
+  }
 
 .paper b{
     font-weight: 600 !important;
+}
+.paper b:first-child{
+    color: rgb(74, 74, 130);
+}
+.dark-css .paper b:first-child{
+    color:rgb(140, 192, 210);
+}
+.paper .company b{
+    color: rgb(213, 153, 0) !important;
 }
 
 .paper.exp{
@@ -17,17 +31,9 @@
     transform: scale(1.018);
 }
 
-.paper.expand{
-    height: 30rem  !important;
-}
-.expand p{
-    margin: 1rem 0 !important;
-}
-.expand .description{
-    display: flex;
-}
+
 .description{
-    display: none;
+    display: flex;
     flex-wrap: wrap;
     width: 100%;
     flex: 1;
